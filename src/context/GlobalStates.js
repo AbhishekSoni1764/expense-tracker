@@ -2,12 +2,7 @@ import React, { createContext, useReducer } from "react"
 import AppReducer from "./AppReducer"
 
 const initialState = {
-    transactions: [
-        { id: 1, text: 'Chocolate', amount: -20 },
-        { id: 2, text: 'Pocket Money', amount: 300 },
-        { id: 3, text: 'Box', amount: -10 },
-        { id: 4, text: 'Speaker', amount: 150 }
-    ]
+    transactions: []
 }
 
 export const GlobalContext = createContext(initialState)
@@ -21,10 +16,17 @@ export const GlobalProvider = ({ children }) => {
             payload: id
         })
     }
+    function addTransaction(transaction) {
+        dispatch({
+            type: 'ADD_EXCHANGE',
+            payload: transaction
+        })
+    }
 
     return (<GlobalContext.Provider value={{
         transactions: state.transactions,
-        deleteTransaction
+        deleteTransaction,
+        addTransaction
     }}>
         {children}
     </GlobalContext.Provider>)
