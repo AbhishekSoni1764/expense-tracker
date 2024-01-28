@@ -22,20 +22,20 @@ export default function Addtransactions() {
 
     return (
         <div>
-            <h3>Add new transaction</h3>
+            <h3>ADD NEW TRANSACTION</h3>
             <form onSubmit={onSubmit} >
                 <div className="form-control">
                     <label htmlFor="text">Text</label>
-                    <input type="text" value={text} onChange={(e)=>setText(e.target.value)} placeholder="Enter text..." />
+                    <input type="text" value={text} onChange={(e)=>setText(e.target.value)} placeholder="Enter Record" />
                 </div>
                 <div className="form-control">
                     <label htmlFor="amount"
                     >Amount <br />
-                        (negative - expense, positive - income)</label
+                        (Negative - Expense, Positive - Income)</label
                     >
-                    <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="Enter amount..." />
+                    <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="Enter Amount" />
                 </div>
-                <button className="btn">Add transaction</button>
+                <button className="btn">Add Transaction</button>
             </form>
         </div>
     )

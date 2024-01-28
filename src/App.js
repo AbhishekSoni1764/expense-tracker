@@ -10,9 +10,11 @@ function App() {
   return (
     <GlobalProvider>
       <Header />
-      <div className="container">
+      <div className="accounts">
         <Balance />
         <CashFlow />
+      </div>
+      <div className="container">
         <History />
         <Addtransactions />
       </div>

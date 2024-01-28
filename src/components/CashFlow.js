@@ -21,12 +21,12 @@ export default function CashFlow() {
     <div>
       <div className="inc-exp-container">
         <div>
-          <h4>Income</h4>
-          <p  className="money plus">${pays}</p>
+          <h4> Income</h4>
+          <p  className="money plus">$ {pays}</p>
         </div>
         <div>
-          <h4>Expense</h4>
-          <p  className="money minus">${costs}</p>
+          <h4> Expense</h4>
+          <p  className="money minus">$ {costs}</p>
         </div>
       </div>
     </div>
