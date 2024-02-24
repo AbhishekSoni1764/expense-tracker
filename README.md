@@ -4,6 +4,10 @@ A React App which will let you manage your expenses/transactions easily.
 
 ## Available Scripts
 
+First in terminal run:
+
+### `npm install or npm i`
+
 In the project directory, you can run:
 
 ### `npm start`
